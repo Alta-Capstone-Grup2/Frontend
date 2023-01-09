@@ -216,7 +216,7 @@ const Detail = () => {
                                         </span></div>
                                             )
                                         })
-                                    ):<></>}
+                                    ):<p>Additional service tidak tersedia</p>}
                                 </div>
                             </div>
                             <div className='flex flex-col items-end md:mx-10 mx-6 py-5'>
@@ -234,7 +234,7 @@ const Detail = () => {
                                     </div>
                                     <button className={`bg-bozz-one text-white h-11 rounded-lg ${available ? `hidden` : `block`}`} onClick={() => onCheck()}>Check Validate</button>
                                     <button className={`bg-bozz-one text-white h-11 rounded-lg ${available ? `block` : `hidden`}`} onClick={() => onOrder()}>Order Now</button>
-                                    <p className={`text-center mt-5 text-bozz-one h-11 rounded-lg ${available ? `block` : `hidden`}`} onClick={() => setAvailable(true)}> Check Other Date</p>
+                                    <p className={`text-center mt-5 text-bozz-one h-11 cursor-pointer rounded-lg ${available ? `block` : `hidden`}`} onClick={() => setAvailable(false)}> Check Other Date</p>
                                 </div>
                             </div>
                         </div>

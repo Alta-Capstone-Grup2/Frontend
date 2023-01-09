@@ -174,7 +174,7 @@ const Dashboard = () => {
     // console.log(status)
     return (
         <>
-        {status && listServices && listAdditional ?
+        {status ?
         <LayoutAdmin>
             <div className='flex flex-col justify between'>
                 <div>
